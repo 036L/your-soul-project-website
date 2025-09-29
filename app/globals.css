@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color scheme to match Your Soul Project design brief with nature-inspired colors */
+  --background: rgb(215, 247, 216); /* Cream background */
+  --foreground: rgb(7, 29, 63); /* Dark gray text */
+  --card: rgb(250, 253, 185); /* Soft beige for cards */
+  --card-foreground: rgb(25, 41, 68); /* Dark gray text on cards */
+  --popover: #ffffff; /* White for popups */
+  --popover-foreground: #374151; /* Dark gray text on popups */
+  --primary: rgb(45, 114, 73); /* Light green primary */
+  --primary-foreground: rgb(222, 232, 248); /* Dark gray text on primary */
+  --secondary: rgb(16, 95, 82); /* Mint green secondary */
+  --secondary-foreground: rgb(26, 45, 75); /* Dark gray text on secondary */
+  --muted: #f3f4f6; /* Light gray muted */
+  --muted-foreground: rgb(3, 17, 42); /* Medium gray for muted text */
+  --accent: rgb(116, 111, 24); /* Mint green accent */
+  --accent-foreground: rgb(226, 230, 208); /* Dark gray text on accent */
+  --destructive: rgb(219, 115, 37); /* Red for destructive actions */
+  --destructive-foreground: #ffffff; /* White text on destructive */
+  --border: #d1d5db; /* Light gray borders */
+  --input: #ffffff; /* White input backgrounds */
+  --ring: #a8d5ba; /* Light green focus ring */
+  --chart-1: #b2e0d4; /* Mint green chart color */
+  --chart-2: #a8d5ba; /* Light green chart color */
+  --chart-3: #e6e1c1; /* Beige chart color */
+  --chart-4: #f9f5e3; /* Cream chart color */
+  --chart-5: #f3f4f6; /* Light gray chart color */
+  --radius: 0.75rem; /* Rounded corners for organic feel */
+  --sidebar: #f9f5e3; /* Cream sidebar */
+  --sidebar-foreground: #374151; /* Dark gray sidebar text */
+  --sidebar-primary: #a8d5ba; /* Light green sidebar primary */
+  --sidebar-primary-foreground: #374151; /* Dark gray sidebar primary text */
+  --sidebar-accent: #b2e0d4; /* Mint green sidebar accent */
+  --sidebar-accent-foreground: #374151; /* Dark gray sidebar accent text */
+  --sidebar-border: #d1d5db; /* Light gray sidebar border */
+  --sidebar-ring: #a8d5ba; /* Light green sidebar focus ring */
+}
+
+.dark {
+  /* Updated dark mode colors to maintain nature theme */
+  --background: #1f2937; /* Dark gray background */
+  --foreground: #f9fafb; /* Light gray text */
+  --card: #374151; /* Medium gray cards */
+  --card-foreground: #f9fafb; /* Light gray text on cards */
+  --popover: #374151; /* Medium gray popups */
+  --popover-foreground: #f9fafb; /* Light gray text on popups */
+  --primary: #6ee7b7; /* Brighter green for dark mode */
+  --primary-foreground: #1f2937; /* Dark gray text on primary */
+  --secondary: #7dd3fc; /* Light blue secondary for dark mode */
+  --secondary-foreground: #1f2937; /* Dark gray text on secondary */
+  --muted: #4b5563; /* Medium gray muted */
+  --muted-foreground: #9ca3af; /* Light gray muted text */
+  --accent: #7dd3fc; /* Light blue accent for dark mode */
+  --accent-foreground: #1f2937; /* Dark gray text on accent */
+  --destructive: #ef4444; /* Bright red for destructive */
+  --destructive-foreground: #ffffff; /* White text on destructive */
+  --border: #4b5563; /* Medium gray borders */
+  --input: #374151; /* Medium gray input backgrounds */
+  --ring: #6ee7b7; /* Bright green focus ring */
+  --chart-1: #7dd3fc; /* Light blue chart color */
+  --chart-2: #6ee7b7; /* Bright green chart color */
+  --chart-3: #fbbf24; /* Yellow chart color */
+  --chart-4: #f472b6; /* Pink chart color */
+  --chart-5: #a78bfa; /* Purple chart color */
+  --sidebar: #1f2937; /* Dark gray sidebar */
+  --sidebar-foreground: #f9fafb; /* Light gray sidebar text */
+  --sidebar-primary: #6ee7b7; /* Bright green sidebar primary */
+  --sidebar-primary-foreground: #1f2937; /* Dark gray sidebar primary text */
+  --sidebar-accent: #7dd3fc; /* Light blue sidebar accent */
+  --sidebar-accent-foreground: #1f2937; /* Dark gray sidebar accent text */
+  --sidebar-border: #4b5563; /* Medium gray sidebar border */
+  --sidebar-ring: #6ee7b7; /* Bright green sidebar focus ring */
+}
+
+@theme inline {
+  /* Updated font variable names to match GeistSans and GeistMono imports */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
