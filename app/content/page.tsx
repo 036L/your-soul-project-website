@@ -26,8 +26,8 @@ export default function ContentPage() {
                 <span className="text-primary block">プロジェクトの想い</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Your Soul Projectの理念や日々の活動を、想いを込めた音楽や動画をお届けします。
-                四季折々の景色、メンバーの想い、プロジェクトの進捗をぜひご覧ください。
+                Your Soul Projectの理念や日々の活動を、音楽や動画を通してお届けします。
+                自然の音、メンバーの想い、プロジェクトの進捗をぜひご覧ください。
               </p>
             </div>
           </div>
@@ -56,9 +56,9 @@ export default function ContentPage() {
                 {/* Music Content */}
                 <TabsContent value="music" className="space-y-12">
                   <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold text-foreground mb-4">楽しみながらプロジェクトを進める</h2>
+                    <h2 className="text-3xl font-bold text-foreground mb-4">自然音楽とメッセージ</h2>
                     <p className="text-muted-foreground max-w-2xl mx-auto">
-                      プロジェクトへの想いを込めた楽曲をSoundCloudで配信します。著作権は当プロジェクトに帰属します。ご利用の際には、許諾申請とクレジットの明記をお願いします。
+                      自然の音を取り入れた音楽や、プロジェクトへの想いを込めた楽曲をSoundCloudで配信しています。
                     </p>
                   </div>
 
@@ -69,14 +69,15 @@ export default function ContentPage() {
                           <Volume2 className="h-12 w-12 text-primary" />
                         </div>
                         <CardTitle className="flex items-center justify-between">
-                          <span>Your Soul</span>
+                          <span>野草の歌</span>
                           <Badge variant="secondary">新着</Badge>
                         </CardTitle>
-                        <CardDescription>Your Soul projectのテーマ曲</CardDescription>
+                        <CardDescription>自然の中で録音した環境音と共に</CardDescription>
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sm text-muted-foreground">
-                          小さな生命体でありながら、あるがままを受け入れ、健気に生きる野草。そんな野草に想いを馳せながら、あなたの魂の輝きを取り戻して欲しいという願いを込めた曲。
+                          朝露に濡れた野草をイメージした楽曲。 鳥のさえずりや風の音と共に、
+                          プロジェクトへの想いを歌にしました。
                         </p>
                         <div className="flex space-x-2">
                           <Button size="sm" className="bg-orange-500 hover:bg-orange-600 text-white">

@@ -2,10 +2,11 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ContactModal } from "@/components/contact-modal"
 import { useContent } from "@/hooks/use-content"
-import { Menu, X, Leaf } from "lucide-react"
+import { Menu, X } from "lucide-react"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,8 +26,14 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Leaf className="h-8 w-8 text-primary" />
-            <span className="font-bold text-xl text-foreground">Your Soul Project</span>
+            <Image
+              src="/images/yoursoulproject-logo.svg"
+              alt="Your Soul Project Logo"
+              width={180}
+              height={48}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
