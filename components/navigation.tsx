@@ -27,11 +27,11 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/images/yoursoulproject-logo.svg"
+              src="/images/yoursoulproject-logo.png"
               alt="Your Soul Project Logo"
-              width={180}
-              height={48}
-              className="h-10 w-auto"
+              width={360}
+              height={90}
+              className="h-16 w-auto md:h-18"
               priority
             />
           </Link>
