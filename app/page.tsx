@@ -33,12 +33,12 @@ export default function HomePage() {
                   </Badge>
                   <h1 className="text-4xl lg:text-6xl font-bold text-balance leading-tight">
                     野草のように
-                    <span className="text-primary block">強く、しなやかに</span>
-                    生きる未来へ
+                    <span className="text-primary block">しなやかに</span>
+                    自立と共生を目指す
                   </h1>
                   <p className="text-xl text-muted-foreground leading-relaxed">
                     現代社会の「依存」から脱却し、一人ひとりが輝く"共生型"コミュニティを創造する。 Your Soul
-                    Projectで、本当の豊かさを見つけませんか？
+                    Projectを共に育ててゆきませんか？
                   </p>
                 </div>
 
@@ -123,7 +123,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-foreground mb-4">なぜYour Soul Project？</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              私たちが目指すのは、単なる田舎暮らしではありません。真の自立と共生を実現するコミュニティです。
+              私たちが目指すのは、真の自立と共生を実現するコミュニティです。
             </p>
           </div>
 
@@ -133,7 +133,7 @@ export default function HomePage() {
                 <div className="bg-primary/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <Leaf className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle>野草の哲学</CardTitle>
+                <CardTitle>野草から学ぶ</CardTitle>
                 <CardDescription>
                   どんな環境でも根を張り、美しく咲く野草のように、
                   一人ひとりが自分らしく輝けるコミュニティを目指します。
@@ -146,9 +146,9 @@ export default function HomePage() {
                 <div className="bg-secondary/20 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                   <Heart className="h-6 w-6 text-secondary" />
                 </div>
-                <CardTitle>母性の力</CardTitle>
+                <CardTitle>分かち合いの精神</CardTitle>
                 <CardDescription>
-                  包み込むような温かさと、生命を育む力。 母性的な愛情でお互いを支え合う関係性を大切にします。
+                  独占したり、奪い合うのではなく、分かち合う心を。与えるからこそ与えられる。三尺三寸箸
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -160,7 +160,7 @@ export default function HomePage() {
                 </div>
                 <CardTitle>依存からの脱却</CardTitle>
                 <CardDescription>
-                  現代社会の様々な依存から解放され、 真の自立と相互扶助による豊かな暮らしを実現します。
+                  インフラやサブスク、会社。気付けば、何かに依存して生きている。恐怖に支配されながら。そんな生活から脱却しませんか？
                 </CardDescription>
               </CardHeader>
             </Card>
