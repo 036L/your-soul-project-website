@@ -29,12 +29,12 @@ export default function HomePage() {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <Badge variant="secondary" className="bg-secondary/20 text-secondary-foreground border-secondary/30">
-                    エコビレッジプロジェクト
+                    持たざる者達の草の根活動
                   </Badge>
                   <h1 className="text-4xl lg:text-6xl font-bold text-balance leading-tight">
-                    野草のように
-                    <span className="text-primary block">しなやかに</span>
-                    自立と共生を目指す
+                    1人1人の可能性で
+                    <span className="text-primary block">喜びが溢れる</span>
+                    コミュニティの創造を目指す
                   </h1>
                   <p className="text-xl text-muted-foreground leading-relaxed">
                     現代社会の「依存」から脱却し、一人ひとりが輝く"共生型"コミュニティを創造する。 Your Soul
@@ -45,7 +45,7 @@ export default function HomePage() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                     <Play className="mr-2 h-5 w-5" />
-                    動画で応援する
+                    動画再生で支援
                   </Button>
                   <Button
                     size="lg"
@@ -61,8 +61,8 @@ export default function HomePage() {
               <div className="relative">
                 <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-primary/30 to-secondary/30 flex items-center justify-center">
                   <img
-                    src="/peaceful-eco-village-with-morning-dew-on-wild-gras.jpg"
-                    alt="朝露に濡れた野草とエコビレッジの風景"
+                    src="/ysp-top.jpg"
+                    alt="川岸の菜の花"
                     className="w-full h-full object-cover"
                   />
                 </div>

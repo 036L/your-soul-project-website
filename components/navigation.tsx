@@ -14,10 +14,10 @@ export function Navigation() {
 
   const navItems = [
     { href: "/", label: "ホーム", pageId: "home" },
-    { href: "/vision", label: "ビジョン・ストーリー", pageId: "vision" },
-    { href: "/support", label: "サポート", pageId: "support" },
+    { href: "/vision", label: "ビジョン", pageId: "vision" },
+    { href: "/support", label: "支援", pageId: "support" },
     { href: "/content", label: "コンテンツ", pageId: "content" },
-    { href: "/logo-story", label: "ロゴストーリー", pageId: "logo-story" },
+    { href: "/logo-story", label: "ロゴについて", pageId: "logo-story" },
   ].filter((item) => item.pageId === "home" || isPageVisible(item.pageId))
 
   return (
@@ -25,7 +25,7 @@ export function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2 md:order-1 absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
             <Image
               src="/images/yoursoulproject-logo.png"
               alt="Your Soul Project Logo"
@@ -37,7 +37,7 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 md:order-2">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -58,7 +58,7 @@ export function Navigation() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden ml-auto">
             <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)} className="text-foreground">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
